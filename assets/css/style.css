@@ -331,6 +331,7 @@
         margin-top: 20px;
     }
     @media screen and (max-width: 991.98px){
+
         .header-container{
             flex-direction: column;
         }
@@ -358,6 +359,12 @@
 			font-size: 18px!important;
 			padding: 10px 30px !important;
 		}
+    }
+
+    @media screen and (max-width: 575.98px){
+         .header-title{
+            font-size: 48px;
+        }
     }
 
 /* EDUCATION COMMONS */
