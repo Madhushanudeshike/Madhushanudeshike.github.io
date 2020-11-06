@@ -1,0 +1,862 @@
+/* TABLE OF CONTENTS */
+/* ------------------
+ General
+ Navbar
+ Header
+ Education Commons
+ Education and Experience Section
+ Skills and Awards Section
+ Contact Section
+ Footer Section
+-------------------- */
+
+/* GENERAL */
+    * {
+        -webkit-font-smoothing: antialiased;
+        -moz-os-font-smoothing: grayscale;
+        box-sizing: border-box;
+    }
+    html {
+        font-family: sans-serif;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        font-family: Poppins;
+        padding: 0;
+        margin: 0;
+        background-color: #FFFFFF;
+		background-image: linear-gradient(#FCFCFC, #FEFEFE);
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0;
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .top-bar{
+        position: fixed;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        z-index: 2;
+        padding: 10px;
+		height: 44px;
+        background-color: #0a6fc0;
+	}
+    .top-bar p{
+        font-weight: 600;		
+	}
+    .padding-0{
+        padding: 0 !important;
+    }
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0!important;
+        overflow: hidden;
+    }
+	#top,
+	#experience,
+	#reviews,
+	#skills,
+	#clients,
+	#contact{
+		display: block;
+		position: relative;
+		top: -125px!important;
+		visibility: hidden;;	
+	}
+    button:focus{
+        outline: none !important;
+    }
+/* NAVBAR */ 
+    .header-scrolled{
+        position: fixed;
+		margin-top: 0!important;
+        top: 44px;
+        left: 0;
+        width: 100%;
+        height: 75px;
+        background-color:#fff !important;
+        -webkit-box-shadow: 0 4px 6px 0 rgba(12,0,46,.05);
+        box-shadow: 0 4px 6px 0 rgba(12,0,46,.05);
+    }
+    .header-scrolled .navbar-brand img{
+        width: 140px;
+        height: auto;
+    }
+    .header-scrolled .nav-link-number {
+        display: none;
+    }
+    .header-scrolled .nav-link-menu{
+        font-size: 15px;
+    }
+    .header-scrolled .learn-more-btn{
+        font-size: 15px;
+        padding: 10px 25px !important;
+    }
+    .navbar{
+		margin-top: 40px;
+        background-color: transparent;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear;
+    }
+    .navbar-nav{
+        align-items: center;
+    }
+    .navbar-brand{
+        display: flex;
+        align-items: center;
+    }
+    .navbar-brand img {
+		margin-left: 15px;
+        width: 200px;
+		height: auto;
+    }
+    .navbar-brand-menu{
+        margin-right: 15px;
+    }
+    .menu-navbar-nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-item{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .navbar-nav:not(.menu-navbar-nav) .nav-item:last-of-type {
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+    }
+    .nav-item .nav-link{
+        text-align: right;
+    }
+    .nav-item .nav-link:hover .nav-link-number{
+        color: #303669 !important; 
+    }
+    .nav-item .nav-link:hover .nav-link-menu{
+        color: #303669 !important; 
+    }
+    .nav-link-number{
+        font-family: Poppins;
+        font-weight: 400!important;
+        font-size: 12px;
+        color: #757575;
+		letter-spacing: 1px;
+		line-height: 1.5;
+    }
+    .nav-link-menu{
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 18px;
+        color: #000000;
+        line-height: 1;
+    }
+    .learn-more-btn{
+        background-color: #3A88EC;
+        font-size: 18px;
+        font-family: Poppins;
+        font-weight: 600;
+        color: #FFFFFF;
+        padding: 10px 30px !important;
+        border-radius: 100px;
+    }
+    .learn-more-btn:hover{
+        color: #FFFFFF;
+        background-color: #303669;
+    }
+	.btn-invert{
+        background-color: #0a6fc0!important;
+    }
+    .btn-invert:hover{
+        background-color: #303669!important;
+    }
+    .navbar-toggler-icon{
+        background-image: url("../images/menu.png");
+    }
+	@media screen and (max-width: 991.98px){
+	.navbar{
+		margin-top: 44px;
+        background-color: #FFFFFF;
+        -webkit-box-shadow: 0 4px 6px 0 rgba(12,0,46,.05);
+        box-shadow: 0 4px 6px 0 rgba(12,0,46,.05);
+	}
+	.navbar-brand img {
+		width: 150px!important;
+		padding: 10px 0;
+    }
+	.header-scrolled{
+        height: inherit;
+	}
+	}
+    @media screen and (max-width: 575.98px){
+        .navbar{
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .menu-navbar-nav {
+            padding-bottom: 10px;
+        }
+    }
+/* HEADER */
+    .header{
+        display: flex;
+        width: 100%;
+        padding: 160px 0 40px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .header-img-section{
+        position: relative;
+    }
+    .header-img-section-bg-graphic-one{
+		animation: blinker 2s linear infinite;
+        position: absolute;
+        left: 0;
+        top: 10%;
+    }
+    .header-img-section-bg-graphic-two{
+		animation: blinker 3s linear infinite;
+        position: absolute;
+        top: 0;
+        left: 40%;
+    }
+
+    .header-img-section-bg-graphic-three{
+		animation: blinker 3s linear infinite;
+        position: absolute;
+        top: 0%;
+        right: 5%;
+    }
+    .header-img-section-bg-graphic-four{
+		animation: blinker 2s linear infinite;
+        position: absolute;
+        right: 0;
+        bottom: 30%;
+    }
+    .header-img-section-bg-graphic-five{
+		animation: blinker 2s linear infinite;
+        position: absolute;
+        right: 10%;
+        bottom: 0;
+    }
+	@keyframes blinker{
+  		50% {
+    	opacity: 0;
+  	}
+	}
+    .bg-graphic-img{
+        width: 80% !important;
+    }
+    .header-img-section img{
+        width: 100%;
+        position: relative;
+    }
+    .header-title-section{
+        position: relative;
+    }
+    .header-title-section-bg-graphic-one{
+		animation: blinker 2s linear infinite;
+        position: absolute;
+        top: 0;
+        right: 35%;
+    }
+    .header-title-section-bg-graphic-two{
+		animation: blinker 3s linear infinite;
+        position: absolute;
+        top: 10%;
+        right: 5%;
+    }
+    .header-title-section-bg-graphic-three{
+		animation: blinker 2s linear infinite;
+        position: absolute;
+        right: 0;
+        bottom: 10%;
+    }
+    .header-title-section-bg-graphic-four{
+		animation: blinker 3s linear infinite;
+        position: absolute;
+        bottom: -25%;
+        right: 20%;
+    }
+    .header-subtitle{
+        font-family: Poppins;
+		color: #757575;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.5;
+        padding-bottom: 15px;
+    }
+    .header-title{
+        font-family: Montserrat;
+        font-weight: 800;
+        font-size: 62px;
+        line-height: 1;
+        padding-bottom: 20px;
+        color: #001342;
+    }
+	.header-title span{
+		font-weight: 200;
+		font-size: 58px;
+	}
+    .header-title-text{
+        font-family: Poppins;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.5;
+        padding-bottom: 15px;
+    }
+    .learn-more-btn-section{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-top: 20px;
+    }
+    @media screen and (max-width: 991.98px){
+        .header-container{
+            flex-direction: column;
+        }
+        .header-title-section{
+            text-align: center;
+            margin-top: 40px;
+        }
+        .navbar-collapse{
+            background-color: #FFFFFF;
+            color: #757575;
+            padding-bottom: 20px;
+        }
+        .nav-link-number{
+            color: #757575;
+            display: none;
+        }
+        .nav-link-menu{
+            color: #757575;
+			font-size: 18px!important;
+        }
+        .learn-more-btn-section{
+            justify-content: center;
+        }
+		.header-scrolled .learn-more-btn{
+			font-size: 18px!important;
+			padding: 10px 30px !important;
+		}
+    }
+
+/* EDUCATION COMMONS */
+	
+    .edu-title{
+        font-family: Montserrat;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 1;
+        color: #001342;
+        margin-bottom: 10px;
+    }
+	.edu-title.software:before{
+		content: "Applications";
+        font-family: Montserrat;
+		display: block!important;
+		color: #757575;
+        font-size: 12px;
+        font-weight: 600;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+        line-height: 1.5;
+		margin-bottom: 5px;
+    }	
+	.edu-title.awards:before{
+		content: "About me";
+        font-family: Montserrat;
+		display: block!important;
+		color: #757575;
+        font-size: 12px;
+        font-weight: 600;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+        line-height: 1.5;
+		margin-bottom: 5px;
+    }	
+/* EDUCATION AND EXPERIENCE SECTION */    
+    .edu-ex-section{
+        display: flex;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        position: relative;
+    }
+    .edu-ex-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .edu-ex-section-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .edu-ex-section-header{
+        display: flex;
+    }
+
+    .edu-ex-section-header{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .edu-ex-section-details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .edu-ex-section-details-bg-graphics{
+        position: absolute;
+        width: 100%;
+        display: none;
+    }
+    .edu-ex-section-details-bg-graphics img{
+        width: 100%;
+    }
+    .edu-ex-section-details-div{
+        padding-top: 20px;
+    }
+    .edu-ex-section-details-card{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .edu-ex-section-degree{
+        width: 100px;
+    }
+    .edu-ex-section-degree-title{
+        border-radius: 100px;
+		max-width: 55px;
+    	color: #FFFFFF;
+    	background-color: #303669;
+    	padding: 5px;
+        font-family: Montserrat;
+		text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+    }
+	.edu-ex-section-degree-title-alt{
+		max-width: 100px;
+    	padding: 0 5px 5px 0;
+        font-family: Montserrat;
+		text-align: left;
+        font-weight: 700;
+        font-size: 16px;
+    }
+	.edu-ex-section-degree-title-alt img{
+		max-width: 55px;
+	}
+    .edu-ex-section-degree-details-card{
+        width: 100%;
+    }
+    .edu-ex-section-degree-details-title{
+        color: #303669;
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .edu-ex-section-degree-details-text{
+        font-size: 16px;
+        line-height: 1.5;
+		color: #4A4A4A;
+        font-family: Poppins;
+        font-weight: 300;
+    }
+    .edu-ex-section-degree-details-year{
+		margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #757575;
+        font-family: Montserrat;
+        font-weight: 600;
+    }
+    @media screen and (max-width: 991.98px){
+		.edu-ex-section{
+        display: block!important;
+		}
+		.edu-ex-container{
+            flex-direction: column;
+        }
+        .edu-ex-two-container{
+            flex-direction: column !important;
+        }
+        .edu-ex-section-div{
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .ex-aw-section-details{
+            margin-bottom: 40px;
+        }
+        .ex-aw-section-details.last{
+            margin-bottom: 0!important;
+        }
+        .edu-ex-two-container{
+            flex-direction: column !important;
+        }
+        .edu-ex-section-div:hover .edu-ex-section-details-bg-graphics{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 575.98px){
+        .edu-ex-section-details-bg-graphics img{
+            height: 100%;
+            width: auto;
+        }
+        .edu-ex-section-details-div{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+
+/* SKILLS AND AWARDS SECTION */    
+    .ex-aw-section{
+        display: flex;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        position: relative;
+    }
+    .edu-ex-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .ex-aw-section-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .ex-aw-section-header{
+        display: flex;
+    }
+    .ex-aw-section-header{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .ex-aw-section-details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .ex-aw-section-details-div{
+        padding-top: 10px;
+    }
+    .ex-aw-section-details-card{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .ex-aw-section-degree{
+        width: 100px;
+    }
+    .ex-aw-section-degree-title{
+        color: #A4C4F3;
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .ex-aw-section-degree-details-card{
+        width: 100%;
+    }
+    .ex-aw-section-degree-details-title{        
+    	color: #303669;
+    	font-family: Montserrat;
+    	font-weight: 700;
+    	font-size: 18px;
+    	margin-bottom: 10px;
+    }
+    .ex-aw-section-degree-details-text{
+        font-size: 16px;
+        line-height: 1.5;
+		color: #404040;
+        font-family: Poppins;
+        font-weight: 300;
+    }
+    .ex-aw-section-degree-details-year{
+		margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #757575;
+        font-family: Montserrat;
+        font-weight: 600;
+    }
+    .ex-aw-progress-bar-title{
+		position: absolute;
+        color: #FFFFFF;
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 14px;
+		line-height: 1;
+		padding: 5px 10px 5px 15px;
+    }
+    .ex-aw-progress-bar-container{
+		padding-left: 0px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    .ex-aw-progress{
+        background-color: #F4F4F4;
+        height: 25px;
+		border-radius: 25px;
+    }
+    .ex-aw-progress-bar{
+        background-color: #0a6fc0;
+		-webkit-animation: progressBar1 4s ease-in-out 4s;
+  		animation: progressBar1 4s ease-in-out 4s;
+  		animation-fill-mode: forwards;
+    }
+	@keyframes progressBar1 {
+  		0% {
+    width: 0;
+  		}
+	}
+    @media screen and (max-width: 991.98px){
+		.ex-aw-section{
+        	display: block!important;
+		}
+        .edu-ex-container{
+            flex-direction: column;
+        }
+		.owl-theme .owl-dots, .owl-theme .owl-nav {
+    		margin-top: 10px!important;
+		}
+    }
+    @media screen and (max-width: 575.98px){
+        .ex-aw-section-details-bg-graphics img{
+            height: 100%;
+            width: auto;
+        }
+        .ex-aw-section-details-div{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+
+/* CONTACT SECTION */
+    .contact-section{
+        display: flex;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: transparent;
+    }
+    .contact-section img{
+        width: 240px!important;
+        height: auto;
+        margin: 0 auto 20px auto!important;
+	}
+    .contact-section .btn-invert{
+        margin-bottom: 15px;	
+	}
+    .contact-section card-body p{
+        font-weight: 300;
+	}
+    .contact-title-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+        text-align: center;
+    }	
+	.contact-subtitle{
+        font-family: Montserrat;
+        color: #757575;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        line-height: 1.5;
+        margin-bottom: 5px;
+    }
+    .contact-title{
+        font-family: Montserrat;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 1;
+        color: #001342;
+        margin-bottom: 20px;
+    }
+    .contact-details{
+        font-family: Montserrat;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 1.5;
+        color: #FFFFFF;
+        padding: 5px 0 15px 15px;
+    }
+    .contact-title-text{
+        font-family: Poppins;
+        font-size: 16px;
+        color: #404040;
+        font-weight: 300;
+        line-height: 1.5;
+        max-width: 470px;
+        margin: 20px auto 5px auto!important;
+    }
+    .contact-form-card{
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        justify-content: right;
+        padding: 45px 55px 45px 45px;
+        position: relative;
+        box-shadow: 0 3px 45px 0 rgba(0,0,0,.25);
+    }
+    .contact-contact-form-input{
+		border: 0;
+        border-bottom: 2px dotted #757575;
+        height: 40px;
+        margin-bottom: 20px;
+        color: #757575;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        padding: 10px;
+        width: 100%;
+    }
+    .contact-contact-form-textarea{
+        border: 0;
+        border-bottom: 2px dotted #757575;
+        margin-bottom: 20px;
+        color: #757575;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        resize: none;
+        height: 120px;
+        width: 100%;
+        padding: 10px;
+    }
+    .submit-form-btn{
+        display: flex;
+        justify-content: center;
+        background-color: #0a6fc0;
+        font-size: 16px;
+        font-family: Poppins;
+        font-weight: 600;
+        color: #fff;
+        border-radius: 100px;
+        width: 100%;
+        border: none;
+        padding: 10px;
+        margin: 10px 0 0 0;
+    }
+    .submit-form-btn:hover{
+        background-color: #303669;
+    }
+    .contact-contact-hover-card{
+        position: absolute;
+        left: -20%;
+        width: 320px;
+        top: 15.5%;
+    }
+    .contact-contact-hover-list{
+        background-COLOR: #303669;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 3px 25px 0 rgba(0,0,0,.25);
+    }
+    .contact-contact-hover-list a{
+        color: #FFFFFF;
+        font-weight: 600;
+    }
+    .contact-contact-hover-list{
+        list-style: none;
+    }
+    .contact-contact-hover-list li{
+        font-size: 15px;
+        color: #fff;
+        font-family: Poppins;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+        margin-top: 5px;
+        padding-left: 15px;
+    }
+    .contact-social-media-icons-section{
+        display: flex;
+        justify-content: left;
+        margin: 20px 0 5px 0!important;
+        letter-spacing: 20px;
+    }	
+    .contact-social-media-icons-section .fa{
+        color: #FFFFFF;
+        font-size: 22px;
+	}
+    @media screen and (max-width: 991.98px){
+        .contact-form-card{
+            flex-direction: column;
+            padding: 40px!important;
+        }
+        .contact-contact-hover-card{
+            position: relative;
+            left: auto;
+            top: auto;
+            margin-top: 60px;
+            width: 100%;
+        }
+	}
+    @media screen and (max-width: 767.98px){
+        .contact-contact-hover-list li,
+		.contact-contact-hover-list li a{
+            font-size: 12px!important;
+        }
+    }
+/* FOOTER SECTION */
+    .footer-section{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-bottom: 0px!important;
+        position: relative;
+        color: #757575;
+    }
+    .footer-container{
+        display: flex;
+        position: relative;
+    }
+    .footer-credits{
+        text-align: center;
+    }
+    .footer-credits p{
+        font-size: 14px;
+        font-weight: 400;
+        color: #757575;
+        font-family: Montserrat;
+        line-height: 1;
+    }
+    .footer-credits a{
+        color: #757575;
+	}
+    .footer-credits img{
+        max-width: 270px;
+        margin: 0 auto 25px auto;
+	}
+    @media screen and (max-width: 991.98px){ 
+        .footer-container{
+            flex-wrap: wrap;
+        }
